@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarusway Survey Form</title>
+    <link rel="stylesheet" href="surveyform.css">
+</head>
+<body>
+    <div id="container">
+    <form action="result.html" method="GET" target="_blank">
+    <h1>Clarusway Survey Form</h1>
+    <label >Thank you for taking the time to help us improve the platform</label>
+    <div id="q1">
+       <label for=username>Name</label>
+       <br>
+    <input type="text" name="Name" id="username" placeholder="Enter your name">
+    <br>
+    <label for="Sname">Surname</label>
+    <br>
+    <input type="text" name="Surname" id=Sname placeholder="Enter your surname">
+    <br>
+    <label for="Uemail">Email</label>
+    <br>
+    <input type="email" name="Email" id=Uemail placeholder="user@clarusway.com">
+</div>
+<div div="q2">
+    <p>Which option best describes your current role?</p>
+    <select name="current role" id="role" >
+        <option value="" disabled selected>Select current role</option>
+        <option value="">Beginner</option>
+       <option value="">Intermediate</option>
+       <option value="">Advance</option>
+       <option value="">Upper advance</option>
+    </select>
+</div>
+    <div id="q3">
+    <label>Would you recommend Clarusway to a friend?</label>
+    <br >
+    <input type="radio" name="recommend" id="recom-1" value="Definetly,Yes" checked>
+    <label for="recom-1">Definetly,Yes</label>
+    <br>
+    <input type="radio" name="recommend" id="recom-2" value="Maybe"> 
+    <label for="recom-2">Maybe</label><br>
+    <input type="radio" name="recommend" id="recom-3" value="Not sure">
+    <label for="recom-3">Not sure</label>
+    <br>
+    <input type="radio" name="recommend" id="recom-4" value="Definetly,No">
+    <label for="recom-4">Definetly,No</label>
+</div>
+<div id="q4">
+    <p>What is your favorite feature of Clarusway?</p>
+    <select name="feature" id="feature">
+        <option disabled selected>Select an opinion</option>
+        <option value="1">KELİMELER KİFAYETSİZ</option>
+        <option value="2">E DAHA NE OLSUN</option>
+        <option value="3">ADAMLAR YAPMIŞ YAV</option>
+        <option value="4">MCCARTY</option>
+    </select>
+</div>
+<div id="q5">
+    <label>What would you like to see improve?(Check all that apply)</label>
+    <br>
+    <input type="checkbox" name="improve-1" id=imp-1 value="Front-end Projects">
+    <label for="imp-1">Front-end Projects</label>
+    <br>
+    <input type="checkbox" name="improve-2" id=imp-1 value="Back-end Projects">
+    <label for="imp-2">Back-end Projects</label>
+    <br>
+    <input type="checkbox" name="improve-3" id=imp-1 value="Data Science">
+    <label for="imp-3">Data Science </label>
+    <br>
+    <input type="checkbox" name="improve-4" id=imp-1 value="Additional Courses">
+    <label for="imp-4">Additional Courses</label>
+</div>
+<div id="q6">
+    <label for="comments">Any comments or suggestion?</label>
+    <br><br>
+    <textarea name="comments" id="comments" placeholder="Enter your comment here... Thanks for your" ></textarea >
+    <input type="submit" value="submit">
+</div>
+</div>
+</form>
+</body>
+</html>
